@@ -3,9 +3,9 @@
  */
 #include <stdio.h>
 /*
- * main:prints the sentence followed by a new line
+ * main - Prints "the sentence followed by a new line."
  *
- * Return:Always 0
+ * Return:Always 0.
  */
 int main(void)
 
