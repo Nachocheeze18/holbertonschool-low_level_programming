@@ -3,7 +3,7 @@
  */
 #include <stdio.h>
 /*
- * main - prints the sentence followed by a new line
+ * main:prints the sentence followed by a new line
  *
  * Return:Always 0
  */
