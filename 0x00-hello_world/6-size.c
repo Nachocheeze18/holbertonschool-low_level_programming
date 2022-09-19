@@ -3,7 +3,7 @@
  * Auth:Venancio Velez
  */
 #include <stdio.h>
-/*
+/**
  * main - Prints various types based on
  *	the computer it is compiles and run on..
  *
