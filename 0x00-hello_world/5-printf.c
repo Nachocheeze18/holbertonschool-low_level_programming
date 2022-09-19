@@ -1,6 +1,11 @@
-#include <stdio.h>
 /*
  * File: 5-printf.c
+ */
+#include <stdio.h>
+/*
+ * main - prints the sentence followed by a new line
+ *
+ * Return:Always 0
  */
 int main(void)
 
