@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print all the numbers of 
+ * main - print all the numbers of
  * base 16 in reverse.
  *
  * Return: 0 on success
