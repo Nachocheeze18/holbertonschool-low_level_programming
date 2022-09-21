@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - print alphabet in lowercase.
@@ -9,7 +9,7 @@ int main(void)
 {
 	int n;
 
-	print_alphabet(n = 'a' n <= 'z' n++);
+	print_alphabet(n = 'a'; n <= 'z'; n++)
 	{
 		putchar(n);
 	}
