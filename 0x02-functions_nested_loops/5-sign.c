@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - prints + if n is greater than 0
+ *print_sign - prints + if n is greater than 0
  * prints 0 if n is zero prints - if n is less than zero
  *
  * @n:carrier variable
