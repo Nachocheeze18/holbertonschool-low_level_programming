@@ -9,11 +9,11 @@ int main(void)
 {
 	int n;
 
-	print_alphabet (n = 'a'; n <= 'z'; n++);
+	print_alphabet(n = 'a' n <= 'z' n++);
 	{
-		_putchar(n);
+		putchar(n);
 	}
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
