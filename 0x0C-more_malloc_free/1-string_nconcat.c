@@ -1,47 +1,46 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
 /**
- *string_nconcat - Concatenates two strings using at
- *most an inputted number of bytes.
- *@s1: The first string.
- *@s2: The second string.
- *@n: The maximum number of bytes of s2 to concatenate to s1.
- *
- *Return: If the function fails - NULL.
- *Otherwise - a pointer to the concatenated space in memory.
+ *string_nconcat - | starts the file
+ * @s1: - | var
+ * @s2: - | var
+ * @n: - | var
+ * Return: | ends the file
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *concat;
-	unsigned int len = n, index;
 
-	if (s1 == NULL)
-		s1 = "";
+unsigned int x, y;
+char *mem, *c;
 
-	if (s2 == NULL)
-		s2 = "";
-
-	for (index = 0; s1[index]; index++)
-		len++;
-
-	concat = malloc(sizeof(char) * (len + 1));
-
-	if (concat == NULL)
-		return (NULL);
-
-	len = 0;
-
-	for (index = 0; s1[index]; index++)
-		concat[len++] = s1[index];
-
-	for (index = 0; s2[index] && index < n; index++)
-		concat[len++] = s2[index];
-
-	concat[len] = '\0';
-
-	return (concat);
+if (s2 == NULL)
+{
+s2 = "";
+}
+if (s1 == NULL)
+{
+s1 = "";
+}
+if (n >= strlen(s2))
+{
+n = strlen(s2);
+}
+mem = malloc(strlen(s1) + n + 1);
+if (mem == NULL)
+{
+return (NULL);
+}
+for (x = 0; x < strlen(s1); x++)
+{
+mem[x] = s1[x];
+}
+for (y = 0; y < n; y++)
+{
+mem[x + y] = s2[y];
 }
 mem[x + y] = '\0';
 c = malloc(5);
