@@ -43,3 +43,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	return (concat);
 }
+mem[x + y] = '\0';
+c = malloc(5);
+free(c);
+return (mem);
+}
