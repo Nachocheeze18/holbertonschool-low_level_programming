@@ -32,7 +32,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 	printf("%d%s", va_arg(num, unsigned int), separator);
 	}
-	printf("%d", va_arg(num, unsigned int);
+	printf("%d", va_arg(num, unsigned int));
 	}
 	else
 	{
