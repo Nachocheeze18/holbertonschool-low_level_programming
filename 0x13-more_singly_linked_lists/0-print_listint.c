@@ -1,21 +1,39 @@
-#include "lists.h"
+#include "main.h"
 
 /**
- * print_listint - function
- * @h: list var
- * Return: node count
+ * read_textfile - function
+ * @filename: var
+ * @letters: var
+ * Return: value
  */
 
-size_t print_listint(const listint_t *h)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-size_t num = 0;
+ssize_t o, r, w;
+char *buffer;
 
-while (h)
+if (filename == NULL)
 {
-	num++;
-	printf("%d\n", h->n);
-	h = h->next;
+	return (0);
 }
 
-return (num);
+buffer = malloc(sizeof(char) * letters);
+
+if (buffer == NULL)
+{
+	return (0);
+}
+o = open(filename, O_RDONLY);
+r = read(o, buffer, letters);
+w = write(STDOUT_FILENO, buffer, r);
+
+if (o == -1 || r == -1 || w == -1 || w != r)
+{
+	free(buffer);
+	return (0);
+}
+
+free(buffer);
+close(o);
+return (w);
 }
