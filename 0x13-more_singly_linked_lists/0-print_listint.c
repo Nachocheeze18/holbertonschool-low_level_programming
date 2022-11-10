@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "lists.h"
 /**
  * read_textfile - function
  * @filename: var
