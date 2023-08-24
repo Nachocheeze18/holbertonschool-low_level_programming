@@ -10,7 +10,7 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-    size_t i; // Declare the loop variable outside the loop
+    size_t i; 
 
     if (array == NULL) {
         return -1;
